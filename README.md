@@ -1,22 +1,7 @@
-# mt-app
+# 美团静态页面
 
-> a mt project make with nuxt
+## Introduction
+本项目用目前主流框架Vue搭建，主要用Css3模仿美团页面，开发的静态页面有[首页](http://meituan.ccimm.top)、[登录页](http://meituan.ccimm.top/login/)、[注册页](http://meituan.ccimm.top/register/)
 
-## Build Setup
 
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn run dev
-
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+项目展示地址[>>Click Me<<](http://meituan.ccimm.top)
