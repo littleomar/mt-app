@@ -1,6 +1,10 @@
-import passport from 'koa-passport'
-import LocalStrategy from 'passport-local'
-import UserModel from '../../dbs/models/users'
+// import passport from 'koa-passport'
+// import LocalStrategy from 'passport-local'
+// import UserModel from '../../dbs/models/users'
+
+const passport = require('koa-passport')
+const LocalStrategy = require('passport-local')
+const UserModel = require('../../dbs/models/users')
 
 passport.use(new LocalStrategy(async (username,password,done) => {
   let where = {
@@ -19,4 +23,6 @@ passport.use(new LocalStrategy(async (username,password,done) => {
 }));
 
 
-export default passport;
+// export default passport;
+
+module.exports = passport

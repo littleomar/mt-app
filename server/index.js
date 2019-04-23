@@ -1,20 +1,20 @@
 
-import Koa from 'koa'
+const Koa = require('koa')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
-import bodyParser from 'koa-bodyparser'
-import Redis from 'koa-redis'
-import session from 'koa-generic-session'
-import mongoose from 'mongoose'
+const bodyParser = require('koa-bodyparser')
+// import Redis from 'koa-redis'
+// import session from 'koa-generic-session'
+const mongoose = require('mongoose')
 
-import dbConfig from './dbs/config'
-import users from './interface/users'
-import passport from './interface/utils/passport'
+const dbConfig = require('./dbs/config')
+const users = require('./interface/users')
+// import passport from './interface/utils/passport'
 
 
 const app = new Koa()
 const host = process.env.HOST || '0.0.0.0'
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 6000
 
 
 app.keys = ['mt','keyskeys'];
